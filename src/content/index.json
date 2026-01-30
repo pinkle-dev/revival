@@ -1,0 +1,94 @@
+{
+  "ua": {
+    "main": {
+      "title": "Відродження",
+      "description": "церква євангельских християн",
+      "action": "Дізнатись більше"
+    },
+    "nav": {
+      "home": "Головна",
+      "about": "Про нас",
+      "events": "Події",
+      "donate": "Донат"
+    },
+    "about": {
+      "title": "Про нас",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit porta lobortis. Integer nec elit eu ante egestas commodo. Nunc ullamcorper, augue id porta dictum, lorem quam placerat nibh, nec facilisis magna mauris vitae augue. In lobortis faucibus magna, sit amet efficitur enim dignissim ac. Maecenas convallis dictum eros at porta. Suspendisse fringilla varius mi, vitae varius libero viverra vitae. Sed eget pretium eros. Donec placerat, ipsum in eleifend aliquet, erat tortor congue urna, non egestas orci libero id sapien. Mauris vestibulum nunc eros, et accumsan felis suscipit sit amet. Maecenas a maximus urna. Quisque odio lorem, placerat ut velit eget, ultrices ornare odio. Etiam magna velit, rutrum sed felis sit amet, ultricies bibendum nisi.",
+      "action": "Дізнатись більше"
+    },
+    "events": {
+      "title": "Події",
+      "subtitles": {
+        "upcoming": "Майбутні:",
+        "past": "Минулі:"
+      },
+      "actions": {
+        "all": "Дивитись усі",
+        "more": "Дивитись більше"
+      }
+    },
+    "schedule": {
+      "title": "Розклад зібрань:",
+      "short_title": "Розклад",
+      "action": "Сховати",
+      "events": [
+        {
+          "title": "Ранкове зібрання",
+          "day": "Неділя:",
+          "time": "10:00"
+        },
+        {
+          "title": "Молодіжне спілкування",
+          "day": "Неділя:",
+          "time": "14:00"
+        }
+      ]
+    }
+  },
+  "en": {
+    "main": {
+      "title": "Revival",
+      "description": "evangelical christian church",
+      "action": "Learn more"
+    },
+    "nav": {
+      "home": "Home",
+      "about": "About us",
+      "events": "Events",
+      "donate": "Donate"
+    },
+    "about": {
+      "title": "About us",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...",
+      "action": "Learn more"
+    },
+    "events": {
+      "title": "Events",
+      "subtitles": {
+        "upcoming": "Upcoming:",
+        "past": "Past:"
+      },
+      "actions": {
+        "all": "Watch all",
+        "more": "Watch more"
+      }
+    },
+    "schedule": {
+      "title": "Meeting schedule:",
+      "short_title": "Schedule",
+      "action": "Hide",
+      "events": [
+        {
+          "title": "Morning meeting",
+          "day": "Sunday:",
+          "time": "10:00"
+        },
+        {
+          "title": "Youth meeting",
+          "day": "Sunday:",
+          "time": "14:00"
+        }
+      ]
+    }
+  }
+}
