@@ -470,7 +470,7 @@ Please change the parent <Route path="${$}"> to <Route path="${$==="/"?"*":`${$}
 `,eL=Se.img`
   width: 70px;
   height: 70px;
-`,tL="/assets/bg-COvgWSa9.png",nL="/assets/arrow-yKDjS6nj.png",rL=()=>{const n=so(ao.MAIN);return T.jsxs(QT,{id:vd.HOME,children:[T.jsx(qT,{src:tL}),T.jsx(ZT,{}),T.jsxs(xi,{children:[T.jsxs(XT,{children:[T.jsx(Tt,{element:He.H1,children:n.title}),T.jsx(Tt,{element:He.P2,children:n.description}),T.jsx(Yt,{desktopVertical:80,mobVertical:70}),T.jsx(io,{variant:ar.FILLED,to:mi.ABOUT,children:n.action})]}),T.jsx(JT,{href:mi.ABOUT,children:T.jsx(eL,{src:nL})})]})]})},oL=Se.article`
+`,tL="/revival/assets/bg-COvgWSa9.png",nL="/revival/assets/arrow-yKDjS6nj.png",rL=()=>{const n=so(ao.MAIN);return T.jsxs(QT,{id:vd.HOME,children:[T.jsx(qT,{src:tL}),T.jsx(ZT,{}),T.jsxs(xi,{children:[T.jsxs(XT,{children:[T.jsx(Tt,{element:He.H1,children:n.title}),T.jsx(Tt,{element:He.P2,children:n.description}),T.jsx(Yt,{desktopVertical:80,mobVertical:70}),T.jsx(io,{variant:ar.FILLED,to:mi.ABOUT,children:n.action})]}),T.jsx(JT,{href:mi.ABOUT,children:T.jsx(eL,{src:nL})})]})]})},oL=Se.article`
   display: flex;
   flex-direction: column;
   gap: 16px;
