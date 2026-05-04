@@ -9,12 +9,39 @@
       "home": "Головна",
       "about": "Про нас",
       "events": "Події",
-      "donate": "Донат"
+      "donate": "Донат",
+      "contacts": "Контакти"
     },
     "about": {
       "title": "Про нас",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut suscipit porta lobortis. Integer nec elit eu ante egestas commodo. Nunc ullamcorper, augue id porta dictum, lorem quam placerat nibh, nec facilisis magna mauris vitae augue. In lobortis faucibus magna, sit amet efficitur enim dignissim ac. Maecenas convallis dictum eros at porta. Suspendisse fringilla varius mi, vitae varius libero viverra vitae. Sed eget pretium eros. Donec placerat, ipsum in eleifend aliquet, erat tortor congue urna, non egestas orci libero id sapien. Mauris vestibulum nunc eros, et accumsan felis suscipit sit amet. Maecenas a maximus urna. Quisque odio lorem, placerat ut velit eget, ultrices ornare odio. Etiam magna velit, rutrum sed felis sit amet, ultricies bibendum nisi.",
-      "action": "Дізнатись більше"
+      "action": "Дізнатись більше",
+      "subtitles": {
+        "ministers": "Служителі:",
+        "history": "Наша історія:",
+        "contacts": "Контакти:"
+      },
+      "ministers": [
+        {
+          "name": "Віктор Кістол",
+          "role": "Пастор",
+          "imageUrl": ""
+        }
+      ],
+      "history": [
+        {
+          "year": "1995",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius neque sit amet nisl bibendum rutrum. Vestibulum blandit lobortis laoreet."
+        },
+        {
+          "year": "1995",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius neque sit amet nisl bibendum rutrum. Vestibulum blandit lobortis laoreet."
+        },
+        {
+          "year": "1995",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius neque sit amet nisl bibendum rutrum. Vestibulum blandit lobortis laoreet."
+        }
+      ]
     },
     "events": {
       "title": "Події",
@@ -43,6 +70,35 @@
           "time": "14:00"
         }
       ]
+    },
+    "contacts": {
+      "title": "Контакти",
+      "action": "Відкрити в Google Maps",
+      "contacts": [
+        {
+          "title": "Пошта:",
+          "description": "revival.church.od@gmail.com"
+        },
+        {
+          "title": "Телефон:",
+          "description": "380000000000"
+        }
+      ],
+      "social": {
+        "title": "Соціальні мережі:",
+        "description": [
+          {
+            "content": "@church_vibe_",
+            "type": "instagram",
+            "link": "@church_vibe_"
+          }
+        ]
+      },
+      "address": {
+        "title": "Наша адреса:",
+        "description": "Україна, Одеська область, місто Одеса, 67633, вулиця Миру, 87",
+        "link": "#"
+      }
     }
   },
   "en": {
@@ -55,12 +111,39 @@
       "home": "Home",
       "about": "About us",
       "events": "Events",
-      "donate": "Donate"
+      "donate": "Donate",
+      "contacts": "Contacts"
     },
     "about": {
       "title": "About us",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...",
-      "action": "Learn more"
+      "action": "Learn more",
+      "subtitles": {
+        "ministers": "Служителі:",
+        "history": "Наша історія:",
+        "contacts": "Контакти:"
+      },
+      "ministers": [
+        {
+          "name": "Віктор Кістол",
+          "role": "Пастор",
+          "imageUrl": ""
+        }
+      ],
+      "history": [
+        {
+          "year": "1995",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius neque sit amet nisl bibendum rutrum. Vestibulum blandit lobortis laoreet."
+        },
+        {
+          "year": "1995",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius neque sit amet nisl bibendum rutrum. Vestibulum blandit lobortis laoreet."
+        },
+        {
+          "year": "1995",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius neque sit amet nisl bibendum rutrum. Vestibulum blandit lobortis laoreet."
+        }
+      ]
     },
     "events": {
       "title": "Events",
@@ -89,6 +172,34 @@
           "time": "14:00"
         }
       ]
+    },
+    "contacts": {
+      "title": "Контакти",
+      "contacts": [
+        {
+          "title": "",
+          "description": ""
+        },
+        {
+          "title": "",
+          "description": ""
+        }
+      ],
+      "social": {
+        "title": "",
+        "description": [
+          {
+            "content": "",
+            "type": "",
+            "link": ""
+          }
+        ]
+      },
+      "address": {
+        "title": "",
+        "description": "",
+        "link": ""
+      }
     }
   }
 }

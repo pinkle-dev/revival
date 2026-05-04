@@ -1,8 +1,9 @@
 import { Layout } from "@/components/Layout";
-import { useLocalStorage, useScroll } from "@/hooks";
+import { useLocalStorage, useScroll, useScrollToTop } from "@/hooks";
 
 export const LayoutPage = () => {
   useScroll();
+  useScrollToTop();
   useLocalStorage();
 
   return <Layout />;

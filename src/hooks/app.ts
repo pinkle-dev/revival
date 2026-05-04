@@ -1,6 +1,7 @@
 import { LANGUAGE_KEY, LANGUAGES, LANGUAGES_TO_UA } from "@/consts";
 import { appState } from "@/state";
 import { useEffect } from "react";
+import { useLocation } from "react-router";
 import { useRecoilState, useSetRecoilState } from "recoil";
 
 export const useScroll = () => {
@@ -21,6 +22,14 @@ export const useScroll = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [setScroll]);
+};
+
+export const useScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 };
 
 export const useLocalStorage = () => {

@@ -18,6 +18,7 @@ export const Wrapper = styled.div`
   ${device.laptop} {
     padding: 0;
     position: static;
+    bottom: 190px;
     width: 100%;
   }
 `;

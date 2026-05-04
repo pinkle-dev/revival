@@ -1,6 +1,13 @@
-import { Button, Card, Container, Divider, Row, Text } from "@/components/UI";
+import {
+  Button,
+  Carousel,
+  Container,
+  Divider,
+  Row,
+  Text,
+} from "@/components/UI";
 import { events } from "./mock";
-import { Wrapper, Block, DesktopWrapper } from "./styles";
+import { Wrapper, Block } from "./styles";
 import {
   ButtonVariants,
   COMPONENTS,
@@ -13,8 +20,8 @@ import { parseEventToCard } from "@/helpers/parse";
 
 export const EventsComponent = () => {
   const content = useTranslation(COMPONENTS.EVENTS);
-  const parseUpcomingEvents = parseEventToCard(events, content.actions.more);
-  const parsePastEvents = parseEventToCard(events, content.actions.more);
+  const parsedUpcomingEvents = parseEventToCard(events, content.actions.more);
+  const parsedPastEvents = parseEventToCard(events, content.actions.more);
   return (
     <Wrapper id={IDS.EVENTS}>
       <Container>
@@ -26,11 +33,7 @@ export const EventsComponent = () => {
             <Button variant={ButtonVariants.LINK}>{content.actions.all}</Button>
           </Row>
           <Divider desktopVertical={24} mobVertical={24} />
-          <DesktopWrapper>
-            {parseUpcomingEvents.map((event) => (
-              <Card key={event.id} {...event} />
-            ))}
-          </DesktopWrapper>
+          <Carousel items={parsedUpcomingEvents} />
         </Block>
         <Divider desktopVertical={50} mobVertical={40} />
         <Block>
@@ -39,11 +42,7 @@ export const EventsComponent = () => {
             <Button variant={ButtonVariants.LINK}>{content.actions.all}</Button>
           </Row>
           <Divider desktopVertical={24} mobVertical={24} />
-          <DesktopWrapper>
-            {parsePastEvents.map((event) => (
-              <Card key={event.id} {...event} />
-            ))}
-          </DesktopWrapper>
+          <Carousel items={parsedPastEvents} />
         </Block>
       </Container>
     </Wrapper>

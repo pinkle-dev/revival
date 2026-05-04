@@ -1,49 +1,21 @@
-export enum COMPONENTS {
-  NAV = "nav",
-  SCHEDULE = "schedule",
+export const COMPONENTS = {
+  NAV: "nav",
+  SCHEDULE: "schedule",
 
-  MAIN = "main",
-  ABOUT = "about",
-  EVENTS = "events",
-}
+  MAIN: "main",
+  ABOUT: "about",
+  EVENTS: "events",
+  CONTACTS: "contacts",
+} as const;
 
-export enum LANGUAGES {
-  EN = "en",
-  UA = "ua",
-}
+export type COMPONENTS = (typeof COMPONENTS)[keyof typeof COMPONENTS];
+
+export const LANGUAGES = {
+  EN: "en",
+  UA: "ua",
+} as const;
+
+export type LANGUAGES = (typeof LANGUAGES)[keyof typeof LANGUAGES];
 
 export const LANGUAGE_KEY = "lang";
 export const LANGUAGES_TO_UA = ["ua", "uk", "ru", "be", "by"];
-
-export type TranslationContentType = {
-  [COMPONENTS.MAIN]: {
-    title: string;
-    description: string;
-    action: string;
-  };
-  [COMPONENTS.NAV]: {
-    home: string;
-    about: string;
-    events: string;
-    donate: string;
-  };
-  [COMPONENTS.ABOUT]: {
-    title: string;
-    description: string;
-    action: string;
-  };
-  [COMPONENTS.SCHEDULE]: {
-    title: string;
-    events: {
-      title: string;
-      day: string;
-      time: string;
-    }[];
-    action: string;
-  };
-};
-
-export type ContentType = {
-  [LANGUAGES.UA]: TranslationContentType;
-  [LANGUAGES.EN]: TranslationContentType;
-};

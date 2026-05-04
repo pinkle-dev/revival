@@ -7,6 +7,7 @@ interface ButtonProps {
   callback?: () => void;
   className?: string;
   to?: string;
+  isBlank?: boolean;
 }
 
 export const Button: React.FC<PropsWithChildren<ButtonProps>> = ({
@@ -14,22 +15,33 @@ export const Button: React.FC<PropsWithChildren<ButtonProps>> = ({
   variant,
   children,
   callback,
-  className,
+  isBlank,
+  ...props
 }) => {
   switch (variant) {
     case ButtonVariants.FILLED:
       return (
-        <FilledButton onClick={callback}>
-          {to ? <a href={to}>{children}</a> : children}
+        <FilledButton {...props} onClick={callback}>
+          {to ? (
+            <a href={to} target={isBlank ? "_blank" : ""}>
+              {children}
+            </a>
+          ) : (
+            children
+          )}
         </FilledButton>
       );
     case ButtonVariants.GHOST:
       return (
-        <GhostButton className={className} onClick={callback}>
+        <GhostButton {...props} onClick={callback}>
           {children}
         </GhostButton>
       );
     default:
-      return <LinkButton to={to || ""}>{children}</LinkButton>;
+      return (
+        <LinkButton {...props} to={to || ""}>
+          {children}
+        </LinkButton>
+      );
   }
 };

@@ -1,4 +1,4 @@
-import { Button, Divider, Text } from "@/components/UI";
+import { Button, Divider, Row, Text } from "@/components/UI";
 import {
   Container,
   Image,
@@ -6,13 +6,15 @@ import {
   DescriptionText,
   ActionWrapper,
 } from "./styles";
-import { ButtonVariants, TextElements } from "@/consts";
+import { ButtonVariants, Directions, TextElements } from "@/consts";
 
-interface CardProps {
+export interface CardProps {
+  id: string;
   title: string;
+  role?: string;
   imageUrl: string;
-  description: string;
-  action: { title: string; to: string };
+  description?: string;
+  action?: { title: string; to: string };
 }
 
 export const Card: React.FC<CardProps> = ({
@@ -20,22 +22,32 @@ export const Card: React.FC<CardProps> = ({
   title,
   description,
   action,
+  role,
 }) => {
   return (
     <Wrapper>
       <Image src={imageUrl} />
       <Container>
-        <Text element={TextElements.H4}>{title}</Text>
-        <Divider desktopVertical={8} mobVertical={8} />
-        <DescriptionText element={TextElements.P3}>
-          {description}
-        </DescriptionText>
-        <ActionWrapper>
-          <Divider desktopVertical={24} mobVertical={40} />
-          <Button variant={ButtonVariants.LINK} to={action.to}>
-            {action.title}
-          </Button>
-        </ActionWrapper>
+        <Row direction={Directions.BETWEEN}>
+          <Text element={TextElements.H4}>{title}</Text>
+          {role && <Text element={TextElements.P5}>{role}</Text>}
+        </Row>
+        {description && (
+          <>
+            <Divider desktopVertical={8} mobVertical={8} />
+            <DescriptionText element={TextElements.P3}>
+              {description}
+            </DescriptionText>
+          </>
+        )}
+        {action && (
+          <ActionWrapper>
+            <Divider desktopVertical={24} mobVertical={40} />
+            <Button variant={ButtonVariants.LINK} to={action.to}>
+              {action.title}
+            </Button>
+          </ActionWrapper>
+        )}
       </Container>
     </Wrapper>
   );

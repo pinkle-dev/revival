@@ -19,9 +19,9 @@ export const Wrapper = styled.article`
 
 export const Image = styled.img`
   width: 100%;
-  height: 100%;
-  max-height: 240px;
+  height: 240px;
   object-fit: cover;
+  background: ${({ theme }) => theme.tertiaryBg};
 `;
 
 export const Container = styled.div`

@@ -1,10 +1,9 @@
-import { Wrapper, Container, LanguageButton, ScheduleWrapper } from "./styles";
+import { Wrapper, Container, LanguageButton } from "./styles";
 import { ButtonVariants, LANGUAGES, ROUTES } from "@/consts";
 import { useRecoilState } from "recoil";
 import { appState } from "@/state";
 import { useLocation } from "react-router";
 import { Navigation } from "./Navigation";
-import { ScheduleInfo } from "@/components/Home//Schedule/Info";
 
 export const Header = () => {
   const [{ lang, scroll, popup }, setApp] = useRecoilState(appState);
@@ -22,9 +21,6 @@ export const Header = () => {
 
   return (
     <Wrapper $show={popup} $scroll={isScroll}>
-      <ScheduleWrapper>
-        <ScheduleInfo isNav />
-      </ScheduleWrapper>
       <Container>
         <div />
         <Navigation isMain={isMain} isScroll={isScroll} location={location} />

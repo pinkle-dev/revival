@@ -19,6 +19,7 @@ export const BackgroundImage = styled.img`
   height: auto;
   object-fit: cover;
   position: absolute;
+  background: ${({ theme }) => theme.tertiaryBg};
   ${device.laptop} {
     height: 100%;
     width: auto;
